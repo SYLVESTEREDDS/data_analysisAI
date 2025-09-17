@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Scrollbar for modern feel */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #6366f1; /* Indigo */
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #4f46e5;
+}
+
+/* Smooth transitions */
+* {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Page background */
+body {
+  @apply bg-gray-50 text-gray-800 font-sans antialiased;
+  font-feature-settings: "liga", "kern";
+  line-height: 1.6;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  @apply font-bold text-gray-900 tracking-tight;
+}
+
+/* Card styles */
+.card {
+  @apply bg-white shadow-md rounded-2xl border border-gray-200 p-6;
+}
+
+/* Buttons */
+.btn {
+  @apply px-4 py-2 rounded-lg font-medium shadow-sm;
+}
+
+.btn-primary {
+  @apply bg-indigo-600 text-white hover:bg-indigo-700;
+}
+
+.btn-secondary {
+  @apply bg-gray-200 text-gray-800 hover:bg-gray-300;
+}
+
+.btn-success {
+  @apply bg-green-600 text-white hover:bg-green-700;
+}
+
+.btn-danger {
+  @apply bg-red-600 text-white hover:bg-red-700;
+}
+
+/* Table styles */
+table {
+  @apply w-full border-collapse text-sm;
+}
+
+th {
+  @apply bg-gray-100 px-3 py-2 text-left font-medium border border-gray-300;
+}
+
+td {
+  @apply px-3 py-2 border border-gray-300;
+}
+
+/* Input fields */
+input, select, textarea {
+  @apply border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500;
+}
+
+/* Animations */
+.fade-in {
+  animation: fadeIn 0.6s ease-in-out;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Gradient backgrounds */
+.gradient-header {
+  background: linear-gradient(90deg, #6366f1, #3b82f6);
+  @apply text-white font-bold;
+}
+
+/* Chart container */
+.chart-card {
+  @apply bg-white rounded-2xl shadow-lg p-4 border border-gray-200;
+}
+
+/* Dashboard layout */
+.dashboard {
+  @apply min-h-screen bg-gray-50 p-6 space-y-6;
+}
