@@ -1,0 +1,27 @@
+# Core backend framework
+fastapi==0.110.0
+uvicorn==0.29.0
+
+# Data science / analytics
+pandas==2.2.1
+numpy==1.26.4
+scikit-learn==1.5.0
+statsmodels==0.14.1
+scipy==1.13.0
+
+# Machine learning / forecasting
+prophet==1.1.5          # Facebook Prophet for forecasting
+torch==2.2.2            # PyTorch (deep learning for AI models)
+
+# Database
+sqlalchemy==2.0.29
+
+# File handling
+python-multipart==0.0.9 # for file uploads
+openpyxl==3.1.2         # Excel support
+
+# Environment variables
+python-dotenv==1.0.1
+
+# Utils
+joblib==1.4.0
